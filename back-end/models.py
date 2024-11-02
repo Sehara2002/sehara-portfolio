@@ -13,3 +13,5 @@ class PostModel(BaseModel):
     id:Optional[str] = Field(alias='_id')
     post_title:str
     description:str
+
+    
