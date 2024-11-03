@@ -28,4 +28,16 @@ async def addPost(post: dict)->str:
     post_data = await posts.find_one({"_id":new_post.inserted_id})
     return viewProject(post_data)
 
+async def getAllProjects()->list:
+    all_projects = []
+    async for project in projects.find():
+        project_json = viewProject(project)
+        all_projects.append(project_json)
+    return all_projects
     
+async def getAllPosts()->list:
+    all_posts = []
+    async for post in posts.find():
+        post_json = viewPost(post)
+        all_posts.append(post_json)
+    return all_posts
