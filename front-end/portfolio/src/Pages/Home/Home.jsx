@@ -1,6 +1,10 @@
+import Navbar from "../../Components/Navbar"
+
 function Home() {
   return (
-    <div>Home</div>
+    <div className="home-page-container">
+      <Navbar/>
+    </div>
   )
 }
 
