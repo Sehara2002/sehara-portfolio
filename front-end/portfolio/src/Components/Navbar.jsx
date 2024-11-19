@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./CSS/navbar.css";
 
 function Navbar() {
     return (
@@ -14,19 +15,19 @@ function Navbar() {
                     <div className="col-sm-8">
                         <ul className="navbar">
                             <li className="nav-item">
-                                <Link to="/">Home</Link>
+                                <Link to="/" className="nav-link">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/academic">Academic Career</Link>
+                                <Link to="/academic" className="nav-link">Academic Career</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/projects">Project Portfolio</Link>
+                                <Link to="/projects" className="nav-link">Project Portfolio</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/about">About Me</Link>
+                                <Link to="/about" className="nav-link">About Me</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/contact">Contact Me</Link>
+                                <Link to="/contact" className="nav-link">Contact Me</Link>
                             </li>
                         </ul>
                     </div>
